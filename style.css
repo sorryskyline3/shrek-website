@@ -4,11 +4,26 @@ body {
 
 #yourmom{
    animation-name: shrinkgrow;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
 @keyframes shrinkgrow {
-    from {height: 10px;}
-    to {height: 100px;}
+ 0% {
+    height: 100px;
+    transform: rotate(0deg);
+ } 
+ 
+ 50% {
+    height: 500px;
+    transform: rotate(180deg);
+ }
+
+ 
+100% {
+height: 100px;
+transform: rotate(360deg);
+}
+    
+
 }
